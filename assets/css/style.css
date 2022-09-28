@@ -212,7 +212,7 @@ html {
 }
 
 h1 {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 
   font-family: "Roboto Slab", serif;
   font-size: 3.75rem;
@@ -244,6 +244,7 @@ a {
   background-color: #2d3651;
   background-image: url(../img/img-header.png);
   background-position: 50% 50%;
+  background-size: cover;
 }
 
 .header-content {
@@ -251,7 +252,7 @@ a {
   z-index: 1;
 }
 .header-content__title {
-  margin: 0 0 65px 0;
+  margin: 0 0 53px 0;
 
   text-align: center;
 }
@@ -280,24 +281,24 @@ a {
   align-items: center;
   -ms-flex-align: center;
 
-  gap: 20px;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 316px;
 }
 
 .header-logo {
-  letter-spacing: 6px;
+  letter-spacing: 0.22em;
 
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .header-logo__link {
   display: block;
 
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 .header-logo__accent {
   display: inline-block;
 
-  padding: 20px 10px;
+  margin-right: 4px;
+  padding: 14px 1px 13px 5px;
 
   border: 3px solid #d53d27;
 }
@@ -325,14 +326,15 @@ a {
   padding: 20px;
 
   list-style: none;
-
-  grid-template-columns: repeat(auto-fit, minmax(30px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
 }
 .header-navbar__link {
   display: block;
 
-  padding: 20px 10px;
+  padding: 20px;
+
+  letter-spacing: 0.09em;
+
+  font-size: 1.126rem;
 }
 
 .header-overlay {

@@ -15,15 +15,17 @@
     justify-content: flex-end;
     padding: $gap;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
     justify-content: end;
   }
 
   &__item {
+
   }
 
   &__link {
     display: block;
-    padding: $gap $gap-sm;
+    padding: $gap;
+    font-size: 1.126rem;
+    letter-spacing: 0.09em;
   }
 }

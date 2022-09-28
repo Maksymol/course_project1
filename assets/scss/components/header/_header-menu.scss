@@ -10,8 +10,7 @@
 
   &__container {
   display: grid;
-  gap: $gap;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 316px;
   align-items: center;
 
   @extend %container;
