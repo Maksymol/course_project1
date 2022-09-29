@@ -27,5 +27,11 @@
     padding: $gap;
     font-size: 1.126rem;
     letter-spacing: 0.09em;
+    transition: color 0.25s;
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
   }
 }
