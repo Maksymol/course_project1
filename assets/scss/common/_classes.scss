@@ -2,17 +2,19 @@
 @use "../mixins" as *;
 
 .btn {
-  background-color: rgba($color-light, 0.1);
-  border-width: 2px;
-  border-style: solid;
-  border-color: $color-light;
-  padding: 0.5em 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.125rem;
-  letter-spacing: 0.1em;
+
+  padding: 0.5em 1em;
+
   transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+  border-width: 2px;
+  border-style: solid;
+
+  font-size: 1.125rem;
 
   &:hover,
   &:focus {
@@ -20,17 +22,42 @@
   }
 
   &--light {
-    background-color: rgba($color-light, 0.1);
     border-color: $color-light;
-    width: 250px;
-    height: 60px;
+    background-color: rgba($color-light, 0.1);
+
+    @include lg-min {
+      font-size: 1.125rem;
+      width: 250px;
+      height: 60px;
+    }
+
+    @include lg-md {
+      font-size: 1.125rem;
+      width: 200px;
+      height: 50px;
+    }
+
+    @include md {
+      width: 170px;
+      height: 40px;
+    }
   }
 
   &--primary {
-    background-color: rgba($color-primary, 0.8);
-    border-color: $color-primary;
-    width: 350px;
+    font-size: 1.125rem;
+
     height: 60px;
+
+    @include sm-min {
+      width: 350px;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+
+    border-color: $color-primary;
+    background-color: rgba($color-primary, 0.8);
   }
 }
 
