@@ -1,9 +1,3 @@
-@use "../presets" as*;
-
-%container {
-  max-width: $ul;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $gap;
-  padding-left: $gap;
-}
+@use "../presets" as *;
+@use "mixins";
+@use "mixins-media";
