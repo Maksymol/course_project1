@@ -19,7 +19,7 @@
     display: grid;
     align-items: center;
 
-    @include container;
     grid-template-columns: auto 316px;
+    @include container;
   }
 }

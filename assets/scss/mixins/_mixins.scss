@@ -1,4 +1,5 @@
 @use "../presets" as *;
+@use "../mixins/mixins-media";
 
 @mixin container {
   max-width: $ul;
@@ -59,27 +60,7 @@
   box-shadow: -3px 3px 20px -10px darken($color-gray-dark, 40%);
 }
 
-@mixin section {
-  @include lg-min {
-    padding-top: $gap-x5;
-    padding-bottom: $gap-x5;
-  }
-  @include lg-md {
-    padding-top: $gap-x4;
-    padding-bottom: $gap-x4;
-  }
-  @include md {
-    padding-top: $gap-x3;
-    padding-bottom: $gap-x3;
-  }
-
-  h2 {
-    margin-top: 0;
-  }
-}
-
 @mixin btn-container {
-
   @include sm-min {
     display: flex;
     justify-content: center;

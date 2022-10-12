@@ -2,8 +2,7 @@
 @use "../../presets" as *;
 
 .posts {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  @extend %section;
 
   &__container {
     @include container;
@@ -11,7 +10,9 @@
 
   &__box {
     display: grid;
+
     padding-bottom: $gap;
+
     gap: $gap;
 
     @include lg-min {
