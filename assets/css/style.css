@@ -438,6 +438,7 @@ input:focus {
   -webkit-transition: color 0.5s;
        -o-transition: color 0.5s;
           transition: color 0.5s;
+  letter-spacing: 0.1em;
 
   font-size: 1.125rem;
 }
@@ -710,6 +711,7 @@ input:focus {
 
   text-align: center;
 
+  color: #637588;
   background-color: #2d3651;
 }
 .footer__container {
@@ -718,7 +720,7 @@ input:focus {
   padding-right: 20px;
   padding-left: 20px;
 }
-.footer__social {
+.footer__box {
   position: relative;
 
   display: grid;
@@ -731,7 +733,7 @@ input:focus {
   grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
-.footer__social::after {
+.footer__box::after {
   position: absolute;
   bottom: -20px;
   left: calc(50% - 37.5px);
@@ -743,7 +745,7 @@ input:focus {
 
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer__social a {
+.footer__box a {
   display: block;
 
   padding: 10px;
@@ -752,19 +754,17 @@ input:focus {
        -o-transition: color 0.5s;
           transition: color 0.5s;
 }
-.footer__social a:hover,
-.footer__social a:focus {
+.footer__box a:hover,
+.footer__box a:focus {
   color: #d66926;
 }
-.footer__social .fab {
+.footer__box .fab {
   font-size: 36px;
 }
 .footer__copy span:nth-of-type(1) {
   margin-right: -0.5em;
 
   letter-spacing: 0.33em;
-
-  color: #637588;
 
   font-weight: 100;
 }
@@ -786,9 +786,6 @@ input:focus {
     gap: 10px;
   }
   .skills__actions {
-    margin-bottom: 30px;
-  }
-  .posts__actions {
     margin-bottom: 30px;
   }
 }
