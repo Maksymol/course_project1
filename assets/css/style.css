@@ -166,6 +166,7 @@ template {
   display: none;
 }
 
+.about__container,
 .header-menu__container,
 .header-content__container {
   max-width: 1340px;
@@ -251,13 +252,34 @@ h1 {
 }
 
 h2 {
+  letter-spacing: 0.1em;
+
+  color: #2d3651;
+
   font-family: "Roboto Slab", serif;
+  line-height: 1.2em;
+}
+
+h3 {
+  letter-spacing: 0.05em;
+
+  color: #637588;
+
+  font-size: 1.125rem;
 }
 
 a {
   text-decoration: none;
 
   color: #ffffff;
+}
+
+p {
+  color: #637588;
+}
+
+input:focus {
+  outline: none;
 }
 
 .header {
@@ -561,6 +583,15 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+.about {
+  letter-spacing: 0.055em;
+
+  background-color: #e5e5e5;
+}
+.about__container {
+  display: grid;
+}
 @media (min-width: 576px) {
   .btn--primary {
     width: 350px;
@@ -614,6 +645,11 @@ a {
   h1 {
     font-size: 3.75rem;
   }
+  h2 {
+    margin-bottom: 3rem;
+
+    font-size: 2.5rem;
+  }
   .header-content__title {
     margin: 0 0 53px 0;
   }
@@ -623,6 +659,10 @@ a {
   .skills__container {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     grid-template-columns: repeat(4, 1fr);
+  }
+  .about__container {
+    gap: 100px;
+    grid-template-columns: 1fr 271px;
   }
 }
 @media (max-width: 991.8px) {
@@ -640,12 +680,21 @@ a {
   h1 {
     font-size: 2.5rem;
   }
+  h2 {
+    margin-bottom: 2.625rem;
+
+    font-size: 2rem;
+  }
   .header-content__title {
     margin: 0 0 43px 0;
   }
   .skills__container {
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
     grid-template-columns: repeat(3, 1fr);
+  }
+  .about__container {
+    gap: 40px;
+    grid-template-columns: 1fr 271px;
   }
 }
 @media (max-width: 767.8px) {
@@ -688,9 +737,18 @@ a {
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
+  h2 {
+    margin-bottom: 2.25rem;
+
+    font-size: 1.5rem;
+  }
   .skills__container {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about__container {
+    gap: 20px;
+    grid-template-columns: 1fr 236px;
   }
 }
 @media (max-height: 690px) {
@@ -701,6 +759,13 @@ a {
 @media (max-width: 575.8px) {
   .btn--primary {
     width: 100%;
+  }
+  h2 {
+    margin-bottom: 2.25rem;
+
+    text-align: center;
+
+    font-size: 1.5rem;
   }
   .header-content__actions {
     -webkit-box-align: center;
@@ -717,5 +782,9 @@ a {
   .skills__container {
     gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+  }
+  .about__container {
+    gap: 20px;
+    grid-template-columns: 1fr;
   }
 }
