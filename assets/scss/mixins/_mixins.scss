@@ -1,4 +1,12 @@
 @use "../presets" as *;
+@use "../mixins/mixins-media";
+
+@mixin container {
+  max-width: $ul;
+  margin: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+}
 
 @mixin text-shortener {
   display: block;

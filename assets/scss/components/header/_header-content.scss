@@ -6,7 +6,7 @@
   z-index: 1;
 
   &__container {
-    @extend %container;
+    @include container;
   }
 
   &__title {
