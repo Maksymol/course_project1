@@ -103,8 +103,6 @@ $diff: 0.2px;
   }
 }
 
-/* lg */
-
 @mixin lg-min {
   @media (min-width: $lg) {
     @content;
