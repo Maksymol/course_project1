@@ -1,7 +1,6 @@
 @use "../presets" as *;
 $diff: 0.2px;
 
-/* ul */
 @mixin ul-min {
   @media (min-width: $ul) {
     @content;
@@ -56,7 +55,6 @@ $diff: 0.2px;
   }
 }
 
-/* xl */
 @mixin xl-min {
   @media (min-width: $xl) {
     @content;
@@ -105,8 +103,6 @@ $diff: 0.2px;
   }
 }
 
-/* lg */
-
 @mixin lg-min {
   @media (min-width: $lg) {
     @content;
@@ -149,7 +145,6 @@ $diff: 0.2px;
   }
 }
 
-/* md */
 @mixin md-min {
   @media (min-width: $md) {
     @content;
@@ -186,7 +181,6 @@ $diff: 0.2px;
   }
 }
 
-/* sm */
 @mixin sm-min {
   @media (min-width: $sm) {
     @content;
@@ -217,7 +211,6 @@ $diff: 0.2px;
   }
 }
 
-/* xs */
 @mixin xs-min {
   @media (min-width: $xs) {
     @content;
@@ -242,7 +235,6 @@ $diff: 0.2px;
   }
 }
 
-/* xx */
 @mixin xx-min {
   @media (min-width: $xx) {
     @content;
