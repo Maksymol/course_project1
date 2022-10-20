@@ -3,11 +3,14 @@
 
 .about {
   letter-spacing: 0.055em;
+
   background-color: $color-gray-light;
+
   @extend %section;
 
   &__container {
     display: grid;
+
     @extend %container;
     @include lg-min {
       gap: $gap-x5;
@@ -35,14 +38,18 @@
 
       &:first-of-type {
         position: relative;
+
         margin-top: -5px;
 
         &::after {
           position: absolute;
           top: 0;
+
           width: 2px;
           height: 200px;
+
           content: "";
+
           background-color: rgba($color-gray, 0.1);
 
           @include lg-min {
@@ -69,6 +76,7 @@
   &__image {
     display: grid;
     align-content: center;
+
     justify-items: center;
 
     img {
